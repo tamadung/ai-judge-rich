@@ -3,7 +3,7 @@
 ## Entry
 - Competition: ai-judge-rich-01 ("Make the AI judge rich"), opened 2026-11-17T11:30:00Z, deadline 2026-11-18T11:30:00Z (18:30 WIB).
 - Repo: tamadung/ai-judge-rich, program `main.py` (Python 3.13, stdlib only), writes the plan to `/output/entry.txt`.
-- Submitted commit: (filled after push)
+- Submitted commit: 79d72bc6c19a3caba46b2fb630d12c0667284491 (entry files; NOTES.md updated in a follow-up commit)
 
 ## What the judge wants (from RULES.txt, read in full)
 - One plan, 1–1,000 Unicode code points, ≥1 non-whitespace char. Judge: z-ai/glm-5.3-flash, pairwise, margin 1–5.
