@@ -36,7 +36,15 @@ salons/spas, same price) and if a city is dry (move on).
 ## Validation (local)
 - 2 runs byte-identical; 999 bytes / 999 code points (gate: 1–1,000); non-whitespace present.
 - Runtime ~0.025 s (limit 60 s); stdlib only; no network, no clock, no randomness, no model call.
-- `makefun check`: (result filled by main session / after bundle)
+- `makefun check` (run 2026-11-18 ~00:06 UTC, no transcripts): **4 pass** (competition_open,
+  snapshot 5 files/7,757 bytes, license_osi MIT, entrypoint main.py→python3.13), **1 fail**
+  (transcripts_present — expected: no bundle given), 13 skipped, 5 site-side at submission.
+  Site-side checks verified manually: repo public, owner.json present, repo created after
+  opening (2026-11-18 ~00:03 UTC), commit pushed, files original (not starter/baseline).
+  The transcript gate can only be checked after the top-level agent bundles (bundle itself
+  says: run bundle from the top-level agent once its subagents finish; usage rows for this
+  subagent session are written only when this run completes).
+- Final HEAD (submit this commit): (filled after push)
 
 ## Flags for the main session (NOT build issues)
 - This bounty is NOT free despite the brief: entry fee **$1.00 USDC once per account**
